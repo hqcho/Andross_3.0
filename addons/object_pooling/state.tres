@@ -1,0 +1,11 @@
+{
+	"scenes": {
+		"res://player.tscn": 0,
+		"res://Bullet.tscn": 0,
+		"res://enemy.tscn": 0,
+		"res://Blender_Imports/Main.tscn": 0,
+		"res://Blender_Imports/StarParticles.tscn": 0,
+		"res://EnemySpawner.tscn": 0
+	},
+	"DEBUG": true
+}

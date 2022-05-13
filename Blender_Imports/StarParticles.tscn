@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="ParticlesMaterial" id=1]
+trail_divisor = 8
+emission_shape = 2
+emission_box_extents = Vector3( 100, 100, 1 )
+direction = Vector3( 0, 0, 1 )
+spread = 0.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 1000.0
+
+[sub_resource type="CapsuleMesh" id=2]
+radius = 0.1
+mid_height = 0.2
+
+[node name="StarParticles" type="Spatial"]
+
+[node name="Particles" type="Particles" parent="."]
+amount = 90
+process_material = SubResource( 1 )
+draw_passes = 4
+draw_pass_1 = SubResource( 2 )
+draw_pass_2 = null
+draw_pass_3 = null
+draw_pass_4 = null
